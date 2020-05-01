@@ -67,7 +67,7 @@ def extract_weather_data(year, month, country='Россия', area=None, city='�
     start = 2 # первые два тега tr не содержат информации о погоде
     
     if soup.title.text == 'Ошибка 404' or len_gismeteo_table < start: # len_gismeteo_table < start бывает в первый день месяца, когда еще нет данных, но страница месяца формально есть
-        print(f'Erroe 404: no data for {year}-{month}')
+        print(f'Error 404: no data for {year}-{month}')
         return result_df # так удобнее конкатенировать 
     
     date = np.zeros(len_gismeteo_table - start).astype(str)
