@@ -1,0 +1,10 @@
+bs4
+pandas
+numpy
+os
+random
+datetime
+time
+bs4
+requests
+fake-useragent==0.1.11
